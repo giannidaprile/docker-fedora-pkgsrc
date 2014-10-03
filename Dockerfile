@@ -10,5 +10,6 @@ RUN tar xvzf pkgsrc.tar.gz
 WORKDIR pkgsrc/bootstrap
 RUN ./bootstrap
 RUN echo PATH=\$PATH:/usr/pkg/bin >> ~/.bashrc
+RUN /usr/pkg/sbin/pkg_admin -K /var/db/pkg fetch-pkg-vulnerabilities
 
 CMD ["/usr/bin/bash"]
