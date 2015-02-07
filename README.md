@@ -4,5 +4,5 @@ Just a small experiment.
 
     docker build -t docker-fedora-pkgsrc .
     docker run -ti docker-fedora-pkgsrc bash
-    cd /usr/pkg/shells/bash
+    cd /usr/pkgsrc/shells/bash
     bmake install clean
