@@ -19,4 +19,5 @@ RUN bmake install cleandir
 WORKDIR /usr/pkgsrc/pkgtools/pkgclean
 RUN bmake install cleandir
 RUN pkgclean
+WORKDIR /root
 CMD ["/bin/bash"]
